@@ -47,7 +47,7 @@ class NodeMonitor(wx.Frame):
             self.flags.append(btn)
         self.timer = wx.Timer(self)
         self.Bind(wx.EVT_TIMER, self.node_status, self.timer)
-        self.timer.Start(milliseconds=5000)
+        self.timer.Start(milliseconds=15000)
         self.node_status((None))
 
     def findButton(self,name):
